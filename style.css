@@ -1,0 +1,213 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    font-family: sans-serif;
+}
+p {
+    position: absolute;
+    top: 110%;
+    color: rgb(139, 139, 139);
+    width: 80%;
+    word-spacing: 3px;
+    line-height: 25px;
+}
+
+#game {
+    position: absolute;
+    top: 4%;
+    margin-top: 30px;
+}
+
+#title {
+    color:rgb(139, 139, 139);
+    position: absolute;
+    top: -2%;
+}
+
+.row {
+    display: flex;
+    padding: 5px;
+}
+
+#custom-alert {
+    display: none;
+    position: fixed;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:rgb(74, 74, 74);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.home-button {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-family: inherit;
+    font-weight: bold;
+    border: 0;
+    padding: 0;
+    height: 40px;
+    width: 80px;
+    cursor: pointer;
+    flex-grow: 1;
+    margin-right: 6px;
+    border-radius: 4px;
+    user-select: none;
+    background-color: rgb(74, 74, 74);
+}
+
+.tile {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 3px solid rgb(74, 74, 74);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 10px;
+    border-radius: 2px;
+}
+
+.easy {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+}
+
+.expert {
+    width: 60px; 
+    height: 60px;
+    font-size: 2rem;
+}
+
+.correct {
+    background-color: rgb(25, 148, 25);
+    outline: 3px solid rgb(25, 148, 25);
+
+}
+
+.present {
+    background-color: rgb(183, 183, 31);
+    outline: 3px solid rgb(183, 183, 31);
+}
+
+.absent {
+    background-color: rgb(74, 74, 74);
+    outline: 3px solid rgb(74, 74, 74);
+}
+
+.selectors-container {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 5%;
+    left: 82%;
+}
+
+.selectors-container button {
+    font-family: inherit;
+    font-weight: bold;
+    border: 0;
+    padding: 0;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    flex-grow: 1;
+    margin-right: 6px;
+    border-radius: 4px;
+    user-select: none;
+    background-color: rgb(74, 74, 74);
+    margin-bottom: 10px;
+}
+
+.difficulty-container {
+    position: absolute;
+    top: 35%;
+    left: 82%;
+}
+
+.difficulty-container button {
+    font-family: inherit;
+    font-weight: bold;
+    border: 0;
+    padding: 0;
+    height: 40px;
+    width: 60px;
+    cursor: pointer;
+    flex-grow: 1;
+    margin-right: 6px;
+    border-radius: 4px;
+    user-select: none;
+    background-color: rgb(74, 74, 74);
+    margin-bottom: 10px;
+}
+
+.keyboard-container {
+    position: absolute;
+    top: 74%;
+    height: 130px;
+    width: 700px;
+}
+
+.keyboard-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto 8px;
+    touch-action: manipulation;
+}
+
+.keyboard-row button {
+    font-family: inherit;
+    font-weight: bold;
+    border: 0;
+    padding: 0;
+    height: 40px;
+    cursor: pointer;
+    flex-grow: 1;
+    text-transform: uppercase;
+    margin-right: 6px;
+    border-radius: 4px;
+    user-select: none;
+    background-color: rgb(74, 74, 74);
+}
+
+.keyboard-row button.wide-button {
+    flex-grow: 1.5;
+}
+
+.spacer-half {
+    flex-grow: 0.5;
+}
+
+#define-word {
+    position: absolute;
+    left: 1%;
+    top: 15%;
+    width: 20%;
+    height: 80%;
+    font-size: 1.5em;
+    color:rgb(139, 139, 139);
+    font-weight: bold;
+    display: block;
+}
+
+#define-link {
+    position: absolute;
+    left: 1%;
+    top: 15%;
+    font-size: 1.5em;
+    font-weight: bold;
+    display: none;
+}
