@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
     <link rel="icon" href="https://cdn.dribbble.com/users/132857/screenshots/2585122/as-logo.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
-<body>
+<body class="bg-dark">
     <h1 id="title">Wordle</h1>
     <div id="game"></div>
     <div id="custom-alert"></div>
@@ -57,7 +56,7 @@
         <button wl="3">3</button>
         <button wl="4">4</button>
         <button wl="5">5</button>
-        <button type="button" wl="6">6</button>
+        <button wl="6">6</button>
         <button wl="7">7</button>
         <button wl="8">8</button>
         <button wl="9">9</button>
@@ -71,29 +70,7 @@
     </div>
     <a id="define-word"></a>
     <a id="define-link" href="https://www.google.com/search?q=define+" target="_blank">What does this word mean?</a>
-    <p style="position:absolute;left:85%;top:91%;width:14%">&#8595 Project Description &#8595</p>
-
-    <div style="position: absolute; top: 105%; width: 90%; color: rgb(74,74,74);"><hr></div>
-    <p>
-        The inspiration for this project came from the popular game that can be seen on the 
-        <a href="https://www.nytimes.com/games/wordle/index.html" target="_blank">New York Times website.</a> 
-        As great as this game is, I always wondered, why limit it to just 5-letter words?
-        Or what if some days I want more or less of a challenge? And occasionally when I couldn't guess the word
-        I would ask, is this really a word? So, for my implementation of the game, I included solutions to all of
-        these questions. My game includes an adjusting grid that changes according to the word length and difficulty 
-        selected, and after the game is over, a definition is provided via the Merriam-Webster API. One of the
-        challenges with this project was making the keyboard from scratch and getting it to look 
-        as I wanted. Another part I found tricky was writing the logic for when an enter/delete would be allowed as 
-        the rules changed depending on the word length and other factors. Overall this project was a great learning experience 
-        with HTML, CSS, JS, and how they all mingle together. I hope this is only the start of my web development journey.
     
-        If you are interested in seeing how I chose to implement this project, feel free to take a look
-        at the <a href="https://github.com/averyschreiner/portfolio/tree/main/html/wordle" 
-        target="_blank" rel="noopener noreferrer">souce code</a>.
-        <br> <br> <br>
-    </p>
-    <!-- <div style="width: 90%; color: rgb(74,74,74);"><hr></div> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 </body>
 </html>
